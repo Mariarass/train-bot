@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aiobot-train/static/css/main.2a410289.css",
+    "main.js": "/aiobot-train/static/js/main.dd3fb294.js",
+    "static/js/453.935aecd7.chunk.js": "/aiobot-train/static/js/453.935aecd7.chunk.js",
+    "index.html": "/aiobot-train/index.html",
+    "main.2a410289.css.map": "/aiobot-train/static/css/main.2a410289.css.map",
+    "main.dd3fb294.js.map": "/aiobot-train/static/js/main.dd3fb294.js.map",
+    "453.935aecd7.chunk.js.map": "/aiobot-train/static/js/453.935aecd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a410289.css",
+    "static/js/main.dd3fb294.js"
+  ]
+}
