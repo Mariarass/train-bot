@@ -8,6 +8,7 @@ const App = () => {
   const [files, setFiles] = useState([]);
   const [isTraining, setIsTraining] = useState(false);
   const [namespace, setNamespace] = useState("General");
+  const [value,setValue]=useState('')
 
   const handleChange = (e) => {
     const selectedFiles = Array.from(e.target.files);
@@ -18,7 +19,13 @@ const App = () => {
     e.preventDefault();
     const formData = new FormData();
     formData.append("length", files.length);
-    formData.append("namespace", namespace);
+    if(value!==''){
+      formData.append("namespace", value);
+    }
+    else {
+      formData.append("namespace", namespace);
+    }
+
 
 
     files.forEach((file, index) => {
@@ -82,6 +89,7 @@ const App = () => {
             <option>BCBS/Virginia</option>
             <option>BCBS/Wisconsin</option>
           </select>
+          <input value={value} onChange={(e)=>setValue(e.target.value)}/>
           <button type="submit" disabled={isTraining} className={s.btn}>
             {isTraining ? "Training in progress..." : "Train"}
           </button>
